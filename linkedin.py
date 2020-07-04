@@ -6,13 +6,13 @@ import time
 
 class Authenticator:
     def __init__(self,driver):
-        self.xpath_user_name = """//*[@id="username"]"""
-        self.xpath_password = """//*[@id="password"]"""
+        self.xpath_user_name = """//*[@id="tuhin@athemesbd.com"]"""
+        self.xpath_password = """//*[@id="TTT#!@BBT"]"""
         self.driver = driver
 
     def login(self,username,password):
-        self.driver.find_element_by_xpath(self.xpath_user_name).send_keys(username.strip())
-        self.driver.find_element_by_xpath(self.xpath_password).send_keys(password.strip())
+        self.driver.find_element_by_xpath(self.xpath_tuhin@athemesbd.com).send_keys(tuhin@athemesbd.com.strip())
+        self.driver.find_element_by_xpath(self.xpath_TTT#!@BBT).send_keys(password.strip())
         self.driver.find_element_by_class_name("btn__primary--large").click()
         # self.driver.find_element_by_xpath("/html/body/div[1]/main/div/form/div[3]/button").click()
         time.sleep(5)
@@ -95,7 +95,7 @@ if __name__ == '__main__':
     authenticator = Authenticator(driver)
     try:
         driver = authenticator.login('2015bcs034@std.must.ac.ug','WtafTrl1')
-        #driver = authenticator.login('dcklee07@gmail.com', 'Chaniel1120!')
+        #driver = authenticator.login('sharifhasanp@gmail.com', 'Chaniel1120!')
     except Exception as e:
         print("Error: {}".format(str(e)))
     sales_navigator_url = "https://www.linkedin.com/sales?trk=d_flagship3_nav"
